@@ -7,8 +7,6 @@ function Home(props) {
     const [wrongCmd, setWrongCmd] = React.useState(false);
     const inputRef = React.useRef();
 
-    //console.log(props.gameData);
-
     let submit = (e) => {
         if (e.type === 'keypress' && e.key !== 'Enter') return;
         let cmd = inputRef.current.value;

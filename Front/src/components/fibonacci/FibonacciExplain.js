@@ -3,9 +3,9 @@ import React from 'react';
 function FibonacciExplain(props) {
 
     const explainUsed = () => {
-        if(!props.hintsData.used){
-            props.hintsData.used = true;
-            props.gameData.filter((elem) => elem.link === props.hintsData.ref)[0].used = true;
+        if(!props.hintData.used){
+            props.hintData.used = true;
+            props.gameData.filter((elem) => elem.link === props.hintData.ref)[0].used = true;
             props.updateData(props.gameData);
         }
     }

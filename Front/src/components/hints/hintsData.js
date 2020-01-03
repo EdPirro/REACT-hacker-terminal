@@ -33,26 +33,26 @@ const data = [
                "if you like you could use the cmd \"_reset\" and see it for yourself"],
         hint:  ["Now let's see if you can solve this riddle, ",
                 "if you're having a hard time use the cmd \"fibHelp\""],
-        makeComponent: (hintsData, gameData, updateData) => <Fibonacci hintsData={hintsData} gameData={gameData} updateData={updateData} />
+        makeComponent: (hintData, gameData, updateData) => <Fibonacci hintData={hintData} gameData={gameData} updateData={updateData} />
     },
     {
         ref: "fib-help",
         type: "complex",
         msg:  ["This is how fibonacci works:"],
         hint:  ["Calculator:"],
-        makeComponent: (hintsData, gameData, updateData) => <FibonacciExplain hintsData={hintsData} gameData={gameData} updateData={updateData} />
+        makeComponent: (hintData, gameData, updateData) => <FibonacciExplain hintData={hintData} gameData={gameData} updateData={updateData} />
     },
     {
         ref: "password",
         type: "complex",
         msg:  ["Here is a PIN input riddle maybe you could make a letter or symbol mean a number and use it as a code to the answer"],
         hint:  ["The correct anser is 9 4 1 btw"],
-        makeComponent: (hintsData, gameData, updateData) => <Password hintsData={hintsData} gameData={gameData} updateData={updateData} />
+        makeComponent: (hintData, gameData, updateData) => <Password hintData={hintData} gameData={gameData} updateData={updateData} />
     },
     {
         ref: "reset",
         type: "complex",
-        makeComponent: (hintsData, gameData, updateData) => <Reset hintsData={hintsData} gameData={gameData} updateData={updateData} />
+        makeComponent: (hintData, gameData, updateData) => <Reset hintData={hintData} gameData={gameData} updateData={updateData} />
 
     }
 ];
