@@ -1,58 +1,61 @@
 Hacker's Terminal
 =================
 
-NAO TERMINADO
-
 Hacker's Terminal é um simples App React usado durante um jogo de "escape room" que fiz. Ele simplemente recebe frases como comandos e faz differentes coisas dependendo qual comando foi entrado.
 
-Esse projeto é dividido em Front e Back end. O front-end
+Esse projeto é dividido em Front e Back end. O front-end é onde quase tudo acontece enquanto o back-end é usado principalmente para impedir um comando de ser usado antes do que deveria e para "salvar" o progresso [nesse](Back/gameData.json) arquivo .json
 
-The project is divided in Front and Back end. The front-end is where almost everithing happens while the back-end is mainly used to stop a command to be used before the time it should and to "save" the progress in [this](Back/gameData.json) .json file.
+Configurando
+------------
 
-Setting Up
-----------
+Esse projeto é apenas uma base, para usá-lo por completo, será necessário configurar os comandos e seus comportamentos.
 
-This project is jus a simple base project to fully use it commands and their behaviours must be set-up.
+Para configurar você precisa mudar os ddos [aqui](Front/src/components/hints/hintsData.js) e adicioná-lo [aqui](Back/gameData.json) para conseguir usá-lo.
 
-To set-up the commands you'll need to change it's data [here](Front/src/components/hints/hintsData.js) and add it [here](Back/gameData.json) to be able to use.
+Para um melhor e mais compreensivo guia para configuraçãp clique [aqui](configuracao.md)
 
-For a better and more comprehensive set-up guide click [here](setup.md).
+Dependências
+------------
 
-Running
------------
-As most web apps, Hacker's Terminal is composed of Front and a Back end, to properly run it you'll need both.
+Para rodar esse projeto voce precisa ter node.js instalado, clique [aqui](https://nodejs.org/en/download/package-manager/) para o guia official de instalação do node.js.
 
-To run them you simply need to:
-1. Open [The Back-end](Back) or [The Front-end](Front) folder.
-2. In a terminal* run:
+Rodando
+-------
+
+Como a maioria dos aplicativos web, Hacker's Terminal é composto de Front e Back end, para rodá-lo corretamente você precisará de ambos.
+
+Para rodá-los voce simplesmente precisa:
+1. Abrir a pasta do [Back-end](Back) ou a do [Front-end](Front).
+2. Num terminal* use:
 	```shell
 	> npm install
 	```
-3. Now run:
+3. E então:
 	```shell
 	> npm start
 	```
 
-After running Back and Front end you can access:
+Apos rodar ambos o Back e o Front end você pode accessar:
 
 > http://localhost:3000/
 
-In any browser in the same machine that is running the project (or change localhost for your IP to access it through any device in your network).
+Em qualquer navegador na mesma maqina onde o projeto esta rodando (ou mudar localhost para seu IP para acessá-lo por qualquer dispositivo na mesma rede).
 
-<sub><sup> *You'll need to have npm start running for both Front and Back at the same time in two different terminals </sup></sub>
+<sub><sup> *Voce precisara de ambos o Front e Back end rodando ao mesmo tempo.</sup></sub>
 
-Support
+Suporte
 -------
 
-If you are having any issues, please let me know.<br/>
-Contact me at edpirro.ep@gmail.com.
+Se estiver tendo qualquer problema, por favor avise-me.
+<br/>
+Contate-me em edpirro.ep@gmail.com.
 
-License
+Licença
 -------
 
-The project is licensed under the [MIT license](LICENSE).
+Esse projeto é licenciado pela [licença MIT](LICENSE).
 
-Repository
+Repositório
 ----------
 
-[Back to the repository page.](https://github.com/EdPirro/REACT-hacker-terminal)
+[Voltar para a página do repositório.](https://github.com/EdPirro/REACT-hacker-terminal)

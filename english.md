@@ -3,19 +3,25 @@ Hacker's Terminal
 
 Hacker's Terminal is a simple React App used during a "escape room" game I made. It simply takes a phrase as a command and do different stuff based on what command was entered.
 
-The project is divided in Front and Back end. The front-end is where almost everithing happens while the back-end is mainly used to stop a command to be used before the time it should and to "save" the progress in [this](Back/gameData.json) .json file.
+The project is divided in Front and Back end. The front-end is where almost everithing happens while the back-end is mainly used to stop a command from being used before the time it should and to "save" the progress in [this](Back/gameData.json) .json file.
 
 Setting Up
 ----------
 
-This project is jus a simple base project to fully use it commands and their behaviours must be set-up.
+This project is just a simple base project, to fully use it, commands and their behaviours must be set-up.
 
 To set-up the commands you'll need to change it's data [here](Front/src/components/hints/hintsData.js) and add it [here](Back/gameData.json) to be able to use.
 
 For a better and more comprehensive set-up guide click [here](setup.md).
 
+Dependencies
+------------
+
+In order to run this project you'll need node.js installed, click [here](https://nodejs.org/en/download/package-manager/) for the official node.js installation guide.
+
 Running
------------
+-------
+
 As most web apps, Hacker's Terminal is composed of Front and a Back end, to properly run it you'll need both.
 
 To run them you simply need to:
@@ -35,7 +41,7 @@ After running Back and Front end you can access:
 
 In any browser in the same machine that is running the project (or change localhost for your IP to access it through any device in your network).
 
-<sub><sup> *You'll need to have npm start running for both Front and Back at the same time in two different terminals </sup></sub>
+<sub><sup> *You'll need both Front and Back end running at the same time. </sup></sub>
 
 Support
 -------
