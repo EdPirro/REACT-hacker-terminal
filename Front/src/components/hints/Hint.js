@@ -2,7 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import hintsData from './hintsData';
 
+
+
+
 function Hint(props) {
+
+    const makeSetUsed = () => {
+        return () => {
+            props.gameData[props.cmdId].used = true;
+            console.log(true);
+            props.updateData(props.gameData);
+        }
+    }
 
     let valid = false;
     let data = undefined;
@@ -29,7 +40,7 @@ function Hint(props) {
                                     </>
                                 );
                         case 'complex':
-                            return data.makeComponent(data, props.gameData, props.updateData);
+                            return data.makeComponent(data, makeSetUsed(), props.gameData, props.updateData);
                         default:
                             throw new Error(`Invalid data(hint) type ${data.type}`);
                     }

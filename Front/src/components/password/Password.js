@@ -15,11 +15,7 @@ function Password(props){
 
     const submit = () => {
         if(sOneRef.current.value === '9' && sTwoRef.current.value === '4' && sThreeRef.current.value === '1'){
-            if(!props.hintData.used){
-                props.hintData.used = true;
-                props.gameData.filter((elem) => elem.link === props.hintData.ref)[0].used = true;
-                props.updateData(props.gameData);
-            }
+            if(!props.hintData.used) props.setUsed();
             setComplete(true);
         } else {
             setWrong(true);

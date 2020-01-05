@@ -24,11 +24,7 @@ function Fibonacci(props) {
             setTwoWrong(true);
         } else setTwoWrong(false);
         if(correct) {
-            if(!props.hintData.used) {
-                props.hintData.used = true;
-                props.gameData.filter((elem) => elem.link === props.hintData.ref)[0].used = true;
-                props.updateData(props.gameData);
-            }
+            if(!props.hintData.used) props.setUsed();
             setComplete(true);
         }
     }

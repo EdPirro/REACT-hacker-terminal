@@ -27,9 +27,14 @@ Para configirar o comando você precisa adicionar um objeto javascript para o [a
 - ref: O nome do comando, esse é o link que será usado para mostrar esse comando (ex: se ref for "name" o link seria  localhost:3000/name).
 - type: dicas podem ser de dois tipos: "simple" ou "complex", o tipo simples vai simplesmente mostar as propriedades "msg" e "hint", o tipo complexo irá rodar a função makeComponent e renderizar o componente retornado por ele.
 - msg e hint: são arrays de strins que serão juntados e exibidos para o usuário como a dica para progredir no jogo.
-- makeComponent: é uma funçã que recebe 3 argumentos, estes sendo hintData (os dados do commando, ou seja, "ref", "type", etc), gameData (um obejeto javascript das informações contidas em gameData.json) e updateData* (uma função que atualiza o arquivo gameData.json para o objeto que assar como argumento para essa função) e deve retornar um React Component que será renderizado.
+- makeComponent: é uma funçã que recebe 3 argumentos, estes sendo:
+  -  hintData: os dados do commando, ou seja, "ref", "type", etc.
+  -  setUsed: Como todo comando tem um a propriedade "used" no arquivo gameData.json, essa função foi criada para permitir que componentes customizados consigam facilmente notificar seu uso, ou seja, settar sua propriedade "used" como true.
+  - msg and hint: are arrays of strings that will be joined together and printed to the user as the hint to progress.
+  -  gameData*: um obejeto javascript das informações contidas em gameData.json.
+  -  updateData*: uma função que atualiza o arquivo gameData.json para o objeto que assar como argumento para essa função e deve retornar um React Component que será renderizado.
 
-<sub><sup> *essa função deveria ser usado ao menos para atualizar a propriedade "used" no gameData.json </sup></sup>
+<sub><sup> *esse parametro é passado para aumentar a liberdade na manipulação dos dados em gameData.json, permintindo-o manuseá-lo como desejar.</sup></sup>
 
 Configurando o Back-end:
 ------------------------

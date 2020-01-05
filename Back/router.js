@@ -12,7 +12,7 @@ router.get('/json', (req, res) => {
     fs.readFile('./gameData.json', (err, data) => {
         if(err) return console.log(err);
         const anwser = JSON.parse(data);
-        console.log(anwser); // just for debug
+        //console.log(anwser); // just for debug
         return res.send(anwser);
     });
     

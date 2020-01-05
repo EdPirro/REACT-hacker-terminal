@@ -20,15 +20,19 @@ To set up the command you'll have to add a javascript object to [hintsData.js fi
         type: "complex",
         msg:  "can be whatever you want",
         props: "You can also set any property you want since you're going to use it manually",
-        makeComponent: (hintData, gameData, updateData) => <Component hintsData={hintsData} gameData={gameData} updateData={updateData} />
+        makeComponent: (hintData, setUsed, gameData, updateData) => <Component hintsData={hintsData} setUsed={setUsed} gameData={gameData} updateData={updateData} />
     },
 ```
-* ref: The name of command, that is the link that will be used to show this command (i. e. if ref is "name" the link to it would be  localhost:3000/name).
-* type: hints can be of two types "simple" or "complex", the simple will simply print "msg" and "hint" properties, the complex will run the makeComponent function and render the component returned.
-* msg and hint: are arrays of strings that will be joined together and printed to the user as the hint to progress.
-* makeComponent: a function that takes 3 arguments, that being hintData (the data of the command, that is, "ref", "type", etc), gameData (the back end gameData.json as a javascript object), and updateData* (a function that updates the gameData.json file to the object you pass as argument to it) and must return a React Component that will be rendered.
+- ref: The name of command, that is the link that will be used to show this command (i. e. if ref is "name" the link to it would be  localhost:3000/name).
+- type: hints can be of two types "simple" or "complex", the simple will simply print "msg" and "hint" properties, the complex will run the makeComponent function and render the component returned.
+- makeComponent: a function that takes 3 arguments, that being:
+  -  hintData: The data of the command, that is, "ref", "type", etc.
+  -  setUsed: As every command has a "used" property in the gameData.json file, this function was created to allow a custom component to simply notify its use, that is, set its "used" property as true.
+  - msg and hint: Are arrays of strings that will be joined together and printed to the user as the hint to progress.
+  -  gameData*: The back end gameData.json as a javascript object.
+  -  updateData*: A function that updates the gameData.json file to the object you pass as argument to it and must return a React Component that will be rendered.
 
-<sub><sup> *this function should be used to, at very least, update the command property "used" in gameData.json </sup></sup>
+<sub><sup> *this is passed to add more freedom to the use of gameData.json letting you change and manipulate it however you want.</sup></sup>
 
 Setting up the Back-end:
 ------------------------
