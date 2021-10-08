@@ -1,10 +1,10 @@
 Hacker's Terminal
 =================
 
-Setting up the Front-end:
+Setting up the Front-end
 -------------------------
 
-To set up the command you'll have to add a javascript object to [hintsData.js file](Front/src/components/hints/hintsData.js), the format for this "hint" can be:
+To set the command up you'll have to add a javascript object to [hintsData.js file](Front/src/components/hints/hintsData.js), the format for this "hint" can be:
 ```javascript
     // This is a simple type hint object
     {

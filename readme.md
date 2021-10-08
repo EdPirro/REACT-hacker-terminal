@@ -1,6 +1,5 @@
-Hacker's Terminal
-=================
+# Hacker's Terminal
 
-- [Version in English.](english.md)
+- [Version in English.](./docs/english.md)
 
-- [Versão em Portugues.](portugues.md)
+- [Versão em Portugues.](./docs/portugues.md)
