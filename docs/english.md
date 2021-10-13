@@ -8,15 +8,15 @@ The project is divided in Front and Back end. The front-end is where almost ever
 
 This project is just a simple base project, to fully use it, commands and their behaviours must be set-up.
 
-To set-up the commands you'll need to change it's data [here](../view/src/components/hints/hintsData.js) and add it [here](../data/gameData.json) to be able to use.
+To set up the commands you'll need to change it's data [here](../view/src/components/hints/hintsData.js) and add it [here](../data/gameData.json) to be able to use.
 
-For a better and more comprehensive set-up guide click [here](./setup.md).
+For a better and more comprehensive set-up guide check [here](./setup.md).
 
 ## Dependencies
 
 In order to run this project you'll need node.js installed, click [here](https://nodejs.org/en/download/package-manager/) for the official node.js installation guide.
 
-Optionally, if you wish to run the application in development mode, you'll need "nodemon" which can be installed with npm `npm i -g nodemon`
+Optionally, if you wish to run the application in development mode, you'll need "nodemon", which can be installed with npm `npm i -g nodemon`
 
 ## Running
 
