@@ -4,6 +4,7 @@ const path = require("path");
 const fs = require('fs');
 
 router.post('/json', (req, res) => {
+    console.log(req.body);
     fs.writeFile(path.join(__dirname, '../data/gameData.json'), JSON.stringify(req.body), err => {if(err)console.log(err)});
     res.status(200).send();
 })

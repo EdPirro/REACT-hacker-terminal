@@ -14,5 +14,3 @@ export default function Reset({ gameData, updateData }) {
         <Redirect to='/' />
     );
 }
-
-export default Reset;

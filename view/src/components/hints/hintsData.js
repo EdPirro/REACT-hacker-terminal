@@ -46,7 +46,7 @@ const data = [
         ref: "password",
         type: "complex",
         msg:  ["Here is a PIN input riddle maybe you could make a letter or symbol mean a number and use it as a code to the answer"],
-        hint:  ["The correct anser is 9 4 1 btw"],
+        hint:  ["Try thinking alphabetically"],
         makeComponent: (hintData, setUsed, gameData, updateData) => <Password hintData={hintData} gameData={gameData} updateData={updateData} setUsed={setUsed} />
     },
     {

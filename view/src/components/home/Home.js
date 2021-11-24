@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 
 function Home(props) {
 
@@ -14,9 +14,6 @@ function Home(props) {
 
         let cmd = inputRef.current.value;
         let link = undefined;
-        /*
-            axios.get(`${baseURL}/lookup?cmd=${cmd}`).then(res => res.valid ? history.push(res.link) : setWrongCmd(true));
-        */
 
         for(let i of props.gameData) 
             if(i.cmd === cmd) {

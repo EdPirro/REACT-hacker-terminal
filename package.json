@@ -1,7 +1,7 @@
 {
   "name": "hackers-terminal-server",
   "version": "1.0.0",
-  "description": "Very simple server for th e hacker's terminal react project",
+  "description": "Very simple server for the hacker's terminal project",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

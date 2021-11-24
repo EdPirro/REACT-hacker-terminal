@@ -43,7 +43,7 @@ export default function App() {
 
 						{gameData.map((elem, id) => 
 							<Route key={id} path={`/${elem.link}`} exact={true}> 
-							<Hint key={id} gameData={gameData} updateData={updateData} cmdRef={elem.link} cmdId={id}  />
+								<Hint key={id} gameData={gameData} updateData={updateData} cmdRef={elem.link} cmdId={id}  />
 							</Route>
 						)}
 
